@@ -26,7 +26,7 @@ export function initMusic() {
 
   loadPrefs();
 
-  audio = new Audio("/music/bg.mp3");
+  audio = new Audio("./music/bg.mp3");
   audio.loop = true;
   audio.volume = state.volume;
   audio.muted = state.muted;

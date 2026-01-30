@@ -5,7 +5,7 @@ export function createShell(root) {
     <div class="scene">
       <header class="topbar">
   <div class="topbarLeft">
-    <img src="/logo.png" alt="chuipas.net" class="logo" />
+    <img src="./logo.png" alt="chuipas.net" class="logo" />
   </div>
 
   <div class="topbarRight">
