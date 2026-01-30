@@ -1,4 +1,3 @@
-import "./main.css";
 import { createShell } from "./engine/ui.js";
 import { createGame } from "./engine/game.js";
 
