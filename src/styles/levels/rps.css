@@ -1,0 +1,123 @@
+/* =========================
+   RPS (Pierre/Feuille/Ciseaux)
+   ========================= */
+
+/* Top bar: score + reset */
+.rpsTop{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom: 10px;
+}
+
+.rpsScore{
+  display:flex;
+  align-items:baseline;
+  gap:12px;
+  padding:10px 12px;
+  border-radius: 999px;
+  border: 3px solid rgba(0,0,0,.18);
+  background: rgba(255,255,255,.7);
+}
+
+/* Arena container */
+.rpsArena{
+  position: relative;
+  padding:14px;
+  border: var(--thick) solid var(--ink);
+  border-radius: 22px;
+  background: rgba(255,255,255,.75);
+  box-shadow: var(--shadow2);
+}
+
+/* Hands side-by-side */
+.rpsHands{
+  display:flex;
+  gap:10px;
+  justify-content:space-between;
+}
+
+.rpsHand{
+  flex: 1;
+  padding:12px;
+  border-radius: 18px;
+  border: 3px solid rgba(0,0,0,.12);
+  background: rgba(0,0,0,.03);
+  text-align:center;
+  min-width: 0;
+}
+
+/* Pick text */
+.rpsPick{
+  font-family: var(--fontTitle);
+  font-weight: 900;
+  font-size: 22px;
+  margin-top: 8px;
+  min-height: 32px;
+  word-break: break-word;
+}
+
+/* Result line */
+.rpsResult{
+  margin-top: 10px;
+  text-align:center;
+  font-weight: 900;
+  min-height: 22px;
+}
+
+/* Choices row */
+.rpsChoices{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.rpsBtn{
+  min-width: 150px;
+}
+
+/* =========================
+   Countdown overlay (like fable)
+   ========================= */
+
+.rpsOverlay{
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  background: rgba(255,255,255,.72);
+  backdrop-filter: blur(2px);
+  border-radius: 22px;
+  opacity:0;
+  pointer-events:none;
+  transition: opacity .25s ease;
+  z-index: 3;
+}
+
+.rpsOverlay.show{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.rpsOverlayText{
+  font-family: var(--fontTitle);
+  font-weight: 900;
+  font-size: 36px;
+  text-align:center;
+  line-height:1.15;
+  padding: 14px 16px;
+}
+
+@media (max-width: 420px){
+  .rpsOverlayText{
+    font-size: 30px;
+  }
+  .rpsPick{
+    font-size: 20px;
+  }
+  .rpsBtn{
+    min-width: 140px;
+  }
+}

@@ -1,0 +1,35 @@
+/* ---------- Typing level ---------- */
+.typingBox{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+  padding:14px;
+  border: var(--thick) solid var(--ink);
+  border-radius:22px;
+  background: rgba(255,255,255,.75);
+  box-shadow: var(--shadow2);
+}
+
+.typingTimer{
+  font-family: var(--fontTitle);
+  font-weight:900;
+  font-size:28px;
+}
+
+.typingWord{
+  font-family: var(--fontTitle);
+  font-weight:900;
+  font-size:32px;
+  padding:8px 16px;
+  border-radius:14px;
+  border: var(--thick) solid var(--ink);
+  background:white;
+  box-shadow: 4px 4px 0 rgba(0,0,0,.2);
+}
+
+.typingInput{
+  width:100%;
+  max-width:320px;
+  font-size:18px;
+}

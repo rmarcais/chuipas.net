@@ -1,0 +1,40 @@
+/* =========================================================
+   chuipas.net — Cartoon / Hand-drawn full CSS
+   ========================================================= */
+
+/* ---------- Fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Nunito:wght@700;900&display=swap');
+
+/* ---------- Variables ---------- */
+:root{
+  --ink:#0b0b0b;
+  --paper:#fff7d6;
+  --paper2:#fff2b8;
+  --accent:#ffe100;
+  --accent2:#ffb703;
+  --pink:#ff4fd8;
+  --green:#22c55e;
+
+  --radius:22px;
+  --thick:4px;
+
+  --shadow: 10px 10px 0 rgba(0,0,0,.28);
+  --shadow2: 6px 6px 0 rgba(0,0,0,.18);
+
+  --fontTitle:"Nunito", system-ui, sans-serif;
+  --fontBody:"Patrick Hand", "Comic Sans MS", system-ui, sans-serif;
+}
+
+/* ---------- Reset / Base ---------- */
+*{ box-sizing:border-box; }
+html, body{
+  height:100%;
+}
+body{
+  margin:0;
+  min-height:100vh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--fontBody);
+  overflow:hidden;
+}

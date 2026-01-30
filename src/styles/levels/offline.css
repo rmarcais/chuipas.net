@@ -1,0 +1,50 @@
+/* ---------- Fake offline (plain) ---------- */
+.offlinePlain{
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* État 1 : panne crédible */
+.offlinePlainBox{
+  max-width: 520px;
+  padding: 24px;
+  color: #111;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.offlinePlainBox h1{
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+
+.offlinePlainBox p{
+  font-size: 15px;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+/* ---------- Reveal final ---------- */
+.offlineReveal{
+  text-align: center;
+  padding: 32px;
+}
+
+.offlineRevealBig{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.offlineRevealSmall{
+  font-size: 18px;
+  font-weight: 500;
+}

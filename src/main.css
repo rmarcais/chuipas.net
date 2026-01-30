@@ -1,0 +1,16 @@
+/* base */
+@import "./styles/base.css";
+
+/* structure */
+@import "./styles/layout.css";
+
+/* UI générique */
+@import "./styles/ui.css";
+
+/* niveaux */
+@import "./styles/levels/fable.css";
+@import "./styles/levels/escape.css";
+@import "./styles/levels/rps.css";
+@import "./styles/levels/offline.css";
+@import "./styles/levels/chrono.css";
+@import "./styles/levels/typing.css";

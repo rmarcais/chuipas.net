@@ -1,0 +1,33 @@
+/* ---------- Escape level ---------- */
+.escapeBox{
+  position:relative;
+  height:260px;
+  border: var(--thick) solid var(--ink);
+  border-radius:20px;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      rgba(0,0,0,.03) 0 12px,
+      rgba(0,0,0,0) 12px 24px
+    );
+  box-shadow: var(--shadow2);
+  overflow:hidden;
+}
+
+/* bouton */
+.escapeBtn{
+  position:absolute;
+  left:0;
+  top:0;
+  padding:10px 16px;
+  font-weight:900;
+  border-radius:999px;
+  cursor:pointer;
+  transition: transform .12s ease;
+}
+
+/* curseur invisible DANS la fenêtre */
+.escapeBox.cursorHidden,
+.escapeBox.cursorHidden *{
+  cursor: none !important;
+}
